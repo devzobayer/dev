@@ -7,6 +7,30 @@ body {
 
     
 }
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  .profile-name {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black; /* Cursor effect */
+    width: 0;
+    animation: typing 4s steps(20, end) forwards, blink-caret 0.5s step-end infinite alternate;
+  }
+  
+  @keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+
 .profile-section img{
     width: 200px;
     height: auto;
@@ -15,12 +39,10 @@ body {
     margin: 20px 0;
 }
 .website-status {
-    background-color: #1a1a2e; /* Beautiful dark blue background color */
   margin-bottom: 0 !important;
   padding: 20px;
 }
 .call-to-action{
-    background-color:  #1a1a2e; /* Elegant dark navy blue background */
     margin-bottom: 0 !important;
     text-align: center;
     padding: 15px;
@@ -46,7 +68,7 @@ body {
     font-weight: bold;
 }
 .logo-container{
-    background:  #162447;
+    background: linear-gradient(to right, #010b35, #00030c);
     padding: 100px 0;
 }
 .logos {
@@ -58,9 +80,13 @@ body {
      margin-top: 30px !important;
 }
 .logos img {
-    width: 40px;
+    width: 60px;
     height: auto;
     transition: transform 0.3s;
+    border-radius: 50px;
+    padding: 10px;
+    background: #dddddd26;
+box-shadow: 0 4px 8px rgba(1, 6, 24, 0.251), 0 6px 20px rgba(6, 31, 133, 0.2);
 }
 @media (max-width: 768px) {
     .Technologies-heading {

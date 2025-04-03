@@ -20,13 +20,13 @@ const Home = () => {
 
     return (
         <div className="home">
-            <section className="profile-section">
+            <section className="profile-section text-center">
                 <img 
                     src="https://avatars.githubusercontent.com/u/175312539" 
                     alt="Profile of Muhammad Zobayer" 
                     className="profile-picture" 
                 />
-                
+                <br />
                 <h1 className="profile-name">Muhammad Zobayer</h1>
                 <p className="profile-description">
                     A passionate MERN stack developer crafting seamless and engaging web experiences.
