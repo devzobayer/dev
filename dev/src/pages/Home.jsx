@@ -55,8 +55,11 @@ const Home = () => {
             </section>
 
             <section className="logo-container">
-                <h2 className="technologies-heading">Technologies I Love</h2>
-                <div className="logos">
+                <div className="technologies-heading mb-6">
+                <h2 className=" ">Technologies I Love</h2>
+                </div>
+            
+                <div className="logos mt-5">
                     <img src={mongoIcon} alt="MongoDB Logo" className="tech-logo" title="MongoDB" />
                     <img src={expressIcon} alt="Express.js Logo" className="tech-logo" title="Express.js" />
                     <img src={reactIcon} alt="React Logo" className="tech-logo" title="React" />

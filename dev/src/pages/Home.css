@@ -67,7 +67,8 @@ body {
 }
 .logo-container{
     background: linear-gradient(to right, #010b35, #00030c);
-    padding: 100px 0;
+padding-top: 30px;
+padding-bottom: 40px;
 }
 .logos {
     display: flex;
@@ -75,7 +76,8 @@ body {
     align-items: center;
     gap: 20px;
      /* Semi-transparent white background */
-     margin-top: 30px !important;
+   padding-top: 30px;
+   padding-bottom: 40px;
 }
 .logos img {
     width: 60px;
