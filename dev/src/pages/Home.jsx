@@ -20,18 +20,34 @@ const Home = () => {
 
     return (
         <div className="home">
-            <div className="logo-section text-center">
+            <section className="profile-section">
+                <img 
+                    src="https://avatars.githubusercontent.com/u/175312539" 
+                    alt="Profile of Muhammad Zobayer" 
+                    className="profile-picture" 
+                />
                 
-                <div className="logo-container">
-                <h2 className='Technologies-heading'>Technologies Used</h2>
+                <h1 className="profile-name">Muhammad Zobayer</h1>
+                <p className="profile-description">
+                    A passionate MERN stack developer crafting seamless and engaging web experiences.
+                </p>
+                <p className="website-status ">
+                    🚧 Website under construction... Exciting updates are on the way! 🚀
+                </p>
+                <p className="call-to-action">
+                    Join me on this journey of innovation and creativity. Feedback and collaboration are always welcome!
+                </p>
+            </section>
+
+            <section className="logo-container">
+                <h2 className="technologies-heading">Technologies I Love</h2>
                 <div className="logos">
-                    <img src={mongoIcon} alt="MongoDB" className="tech-logo" />
-                    <img src={expressIcon} alt="Express.js" className="tech-logo" />
-                    <img src={reactIcon} alt="React" className="tech-logo" />
-                    <img src={nodeIcon} alt="Node.js" className="tech-logo" />
+                    <img src={mongoIcon} alt="MongoDB Logo" className="tech-logo" title="MongoDB" />
+                    <img src={expressIcon} alt="Express.js Logo" className="tech-logo" title="Express.js" />
+                    <img src={reactIcon} alt="React Logo" className="tech-logo" title="React" />
+                    <img src={nodeIcon} alt="Node.js Logo" className="tech-logo" title="Node.js" />
                 </div>
-                </div>
-            </div>
+            </section>
         </div>
     );
 };
