@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #040e2b, #00050c); /* Deeper dark gradient background */
+    color: #fff;
+
+    
+}
+
+.online-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home {
+    text-align: center;
+    min-height: 100vh;
+}
+
+.timer {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.header-h2{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: #e5e3d8;
+    margin-top: 10px;
+}
+
+.hero-section {
+    margin-bottom: 40px;
+    padding: 20px;
+   width: 70%;
+   margin: auto;
+  
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #a3edc4;
+}
+.name{
+    color: rgb(74, 224, 174);
+}
+.hero-section span{
+    color: #e4e4e4;
+    font-weight: bold;
+}
+.hero-section p {
+    font-size: 1.3rem;
+    color: #cdcbcb !important;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    overflow: hidden; /* Ensures text is hidden initially for animation */
+    white-space: nowrap; /* Prevents text wrapping */
+    text-overflow: ellipsis;
+    max-width: 100%; /* Adjust the width as needed */
+    border: none; /* Removes typing cursor effect */
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.under-construction{
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 20px;
+    text-align: center !important;
+}
+
+
+.content-section {
+    text-align: left;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1); /* Transparent white background */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #21f5ab;
+}
+
+.content-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tech-list .tech-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.tech-item{
+    color: #e6e6e6;
+}
+.tech-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.content-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        width: 90%;
+        padding: 10px;
+    }
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+    .header-h2{
+        font-size: 16px !important;
+        margin-bottom: 10px;
+        color: #ffffff;
+    
+}
+
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .tech-list .tech-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tech-icon {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-section p {
+        font-size: 0.9rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .timer {
+        font-size: 1rem;
+    }
+}
