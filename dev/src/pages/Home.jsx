@@ -6,9 +6,9 @@ import reactIcon from '../assets/react.svg'; // React icon
 import nodeIcon from '../assets/node.png'; // Node.js icon
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 const Home = () => {
     const [currentTime, setCurrentTime] = useState(new Date().toLocaleTimeString());
+    const [showPopup, setShowPopup] = useState(true); // State to control popup visibility
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -18,13 +18,28 @@ const Home = () => {
         return () => clearInterval(timer); // Cleanup the interval on component unmount
     }, []);
 
+    const closePopup = () => {
+        setShowPopup(false); // Hide the popup when the close button is clicked
+    };
+
     return (
         <div className="home">
+            {showPopup && (
+                <div className="popup">
+                    <div className="popup-content">
+                        <p>🚧 Website under construction, not yet complete. 🚀</p>
+                        <button className="close-popup" onClick={closePopup}>
+                            Close
+                        </button>
+                    </div>
+                </div>
+            )}
+
             <section className="profile-section text-center">
-                <img 
-                    src="https://avatars.githubusercontent.com/u/175312539" 
-                    alt="Profile of Muhammad Zobayer" 
-                    className="profile-picture" 
+                <img
+                    src="https://avatars.githubusercontent.com/u/175312539"
+                    alt="Profile of Muhammad Zobayer"
+                    className="profile-picture"
                 />
                 <br />
                 <h1 className="profile-name">Muhammad Zobayer</h1>

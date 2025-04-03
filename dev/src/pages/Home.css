@@ -2,10 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #040e2b, #00050c); /* Deeper dark gradient background */
+    background: linear-gradient(to right, #040e2b, #00050c);
     color: #fff !important;
-
-    
 }
 @keyframes typing {
     from {
@@ -87,6 +85,49 @@ body {
     padding: 10px;
     background: #dddddd26;
 box-shadow: 0 4px 8px rgba(1, 6, 24, 0.251), 0 6px 20px rgba(6, 31, 133, 0.2);
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+   background: #010b35;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+}
+
+.popup-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.close-popup {
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.close-popup:hover {
+    background: #ff1a1a;
 }
 @media (max-width: 768px) {
     .Technologies-heading {
