@@ -100,7 +100,7 @@ box-shadow: 0 4px 8px rgba(1, 6, 24, 0.251), 0 6px 20px rgba(6, 31, 133, 0.2);
 }
 
 .popup-content {
-   background: #010b35;
+    background: linear-gradient(to right, #02081d, #010d2f);
     color: #ffffff;
     padding: 20px;
     border-radius: 10px;
