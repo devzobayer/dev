@@ -4,6 +4,12 @@ import mongoIcon from '../assets/MongoDB.svg'; // MongoDB icon
 import expressIcon from '../assets/express.png'; // Express.js icon
 import reactIcon from '../assets/react.svg'; // React icon
 import nodeIcon from '../assets/node.png'; // Node.js icon
+import htmlIcon from '../assets/html-5-logo-svgrepo-com.svg'; // HTML icon
+import cssIcon from '../assets/w3_css-icon~old.svg'; // CSS icon
+import tailwindIcon from '../assets/tailwind-css-svgrepo-com.svg'; // Tailwind CSS icon
+import bootstrapIcon from '../assets/icons8-bootstrap.svg'; // Bootstrap icon
+import restApiIcon from '../assets/rest-api-icon.svg'; // REST API icon
+import javaScript from '../assets/javascript.svg'; // REST API icon
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = () => {
@@ -72,6 +78,13 @@ const Home = () => {
                     <img src={expressIcon} alt="Express.js Logo" className="tech-logo" title="Express.js" />
                     <img src={reactIcon} alt="React Logo" className="tech-logo" title="React" />
                     <img src={nodeIcon} alt="Node.js Logo" className="tech-logo" title="Node.js" />
+                    <img src={htmlIcon} alt="HTML Logo" className="tech-logo" title="HTML" />
+                    <img src={cssIcon} alt="CSS Logo" className="tech-logo" title="CSS" />
+                    <img src={javaScript} alt="JavaScript Logo" className="tech-logo" title="JavaScript" />
+                    <img src={tailwindIcon} alt="Tailwind CSS Logo" className="tech-logo" title="Tailwind CSS" />
+                    <img src={bootstrapIcon} alt="Bootstrap Logo" className="tech-logo" title="Bootstrap" />
+                    <img src={restApiIcon} alt="REST API Logo" className="tech-logo" title="REST API" />
+                   
                 </div>
             </section>
         </div>
