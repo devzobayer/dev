@@ -120,7 +120,7 @@ box-shadow: 0 4px 8px rgba(1, 6, 24, 0.251), 0 6px 20px rgba(6, 31, 133, 0.2);
 }
 
 .close-popup {
-    background: #ff4d4d;
+    background: linear-gradient(to right, #4a0101, git add#6b0000);
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -131,7 +131,7 @@ box-shadow: 0 4px 8px rgba(1, 6, 24, 0.251), 0 6px 20px rgba(6, 31, 133, 0.2);
 }
 
 .close-popup:hover {
-    background: #ff1a1a;
+    background: #110000;
 }
 @media (max-width: 768px) {
     .Technologies-heading {

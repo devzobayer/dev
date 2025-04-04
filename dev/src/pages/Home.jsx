@@ -8,7 +8,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = () => {
     const [currentTime, setCurrentTime] = useState(new Date().toLocaleTimeString());
-    const [showPopup, setShowPopup] = useState(true); // State to control popup visibility
+    const [showPopup, setShowPopup] = useState(false); // State to control popup visibility
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowPopup(true); // Show the popup after 5 seconds
+        }, 5000);
+
+        return () => clearTimeout(timer); // Cleanup the timeout on component unmount
+    }, []);
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -37,7 +45,7 @@ const Home = () => {
 
             <section className="profile-section text-center">
                 <img
-                    src="https://avatars.githubusercontent.com/u/175312539"
+                    src="https://media.licdn.com/dms/image/v2/D4E03AQEs1i6EPRc5Kw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1667657495503?e=1749081600&v=beta&t=vcbWd-QIMe-5ubAw2NAvvdUWjqHDMSzX-vvfuZ2kR8U"
                     alt="Profile of Muhammad Zobayer"
                     className="profile-picture"
                 />
